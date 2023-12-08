@@ -1,0 +1,71 @@
+/* reset  */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* altura da viewport  */
+
+body {
+    height: 100dvh;
+    width: 100dvw;
+}
+
+.section-conteiner {
+    height: 100dvh;
+    width: 100dvw;
+}
+
+/* divisão do grid  */
+
+.conteiner {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 60px repeat(5, 1fr) 100px;
+    grid-template-columns: repeat(4, 1fr);
+    /* gap: 5px; */
+}
+
+
+/* estilo dos elementos  */
+
+.elemento {
+    border: 1px solid #474747;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200%;
+}
+
+.A {
+    background-color: #FFA732;
+    grid-area: 1/1/2/5;
+}
+
+.B {
+    background-color: #EF4040;
+    grid-area: 2/1/4/5;
+}
+
+.C {
+    background-color: #C21292;
+    grid-area: 4/1/7/4;
+}
+
+.D {
+    background-color: #711DB0;
+    grid-area: 4/4/7/5;
+}
+
+.E {
+    background-color: #219C90;
+    grid-area: 7/1/8/3;
+}
+
+.F {
+    background-color: #E9B824;
+    grid-area: 7/3/8/5;
+}
+
